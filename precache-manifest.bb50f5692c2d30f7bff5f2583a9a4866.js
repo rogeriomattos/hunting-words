@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca4efe7cccd359d4576e7e37c116a061",
+    "revision": "92d2b8d0cd8e3491cda2e896c2d6ca9b",
     "url": "/hunting-words/index.html"
   },
   {
-    "revision": "6ffbaf9c285e75c3ab58",
+    "revision": "a380f87aaf328a6081cb",
     "url": "/hunting-words/static/css/main.05a223fa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hunting-words/static/js/2.87ab8b08.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ffbaf9c285e75c3ab58",
-    "url": "/hunting-words/static/js/main.01e5c919.chunk.js"
+    "revision": "a380f87aaf328a6081cb",
+    "url": "/hunting-words/static/js/main.b7ebb9b9.chunk.js"
   },
   {
     "revision": "8529a4f0b619976d0c07",

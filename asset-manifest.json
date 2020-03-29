@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hunting-words/static/css/main.05a223fa.chunk.css",
-    "main.js": "/hunting-words/static/js/main.01e5c919.chunk.js",
-    "main.js.map": "/hunting-words/static/js/main.01e5c919.chunk.js.map",
+    "main.js": "/hunting-words/static/js/main.b7ebb9b9.chunk.js",
+    "main.js.map": "/hunting-words/static/js/main.b7ebb9b9.chunk.js.map",
     "runtime-main.js": "/hunting-words/static/js/runtime-main.efb7a0dc.js",
     "runtime-main.js.map": "/hunting-words/static/js/runtime-main.efb7a0dc.js.map",
     "static/js/2.87ab8b08.chunk.js": "/hunting-words/static/js/2.87ab8b08.chunk.js",
     "static/js/2.87ab8b08.chunk.js.map": "/hunting-words/static/js/2.87ab8b08.chunk.js.map",
     "index.html": "/hunting-words/index.html",
-    "precache-manifest.4857feb038f513125619834d3b1e670e.js": "/hunting-words/precache-manifest.4857feb038f513125619834d3b1e670e.js",
+    "precache-manifest.bb50f5692c2d30f7bff5f2583a9a4866.js": "/hunting-words/precache-manifest.bb50f5692c2d30f7bff5f2583a9a4866.js",
     "service-worker.js": "/hunting-words/service-worker.js",
     "static/css/main.05a223fa.chunk.css.map": "/hunting-words/static/css/main.05a223fa.chunk.css.map",
     "static/js/2.87ab8b08.chunk.js.LICENSE.txt": "/hunting-words/static/js/2.87ab8b08.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.efb7a0dc.js",
     "static/js/2.87ab8b08.chunk.js",
     "static/css/main.05a223fa.chunk.css",
-    "static/js/main.01e5c919.chunk.js"
+    "static/js/main.b7ebb9b9.chunk.js"
   ]
 }
