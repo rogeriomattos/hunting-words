@@ -27,4 +27,4 @@ const alphabet = [
     'Z'
 ];
 
-export default alphabet;
+module.exports = alphabet;
