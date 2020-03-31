@@ -1,6 +1,6 @@
 {
   "name": "hunting-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pacote de funções que ajundam a criar caça-palavras.",
   "main": "index.js",
   "scripts": {

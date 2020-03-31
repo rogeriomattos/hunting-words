@@ -10,7 +10,7 @@ npm i hunting-words
 ```js
 const { create } = require('hunting-words');
 
-let huntingWords = create(["word 1","word 2,"word 3);
+let huntingWords = create(["word 1","word 2","word 3");
 ```
 
 - create(words, row, column): 
