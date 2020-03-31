@@ -1,0 +1,20 @@
+{
+  "name": "hunting-words",
+  "version": "1.0.0",
+  "description": "Pacote de funções que ajundam a criar caça-palavras.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeriomattos/hunting-words.git"
+  },
+  "keywords": ["word-hunting", "js", "game"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogeriomattos/hunting-words/issues"
+  },
+  "homepage": "https://github.com/rogeriomattos/hunting-words#readme"
+}
