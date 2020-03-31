@@ -1,7 +1,7 @@
 {
   "name": "hunting-words",
   "version": "1.0.1",
-  "description": "Pacote de funções que ajundam a criar caça-palavras.",
+  "description": "Package of functions that help to create hunting word game.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
