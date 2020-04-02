@@ -22,6 +22,6 @@ It also receives a parameter called row that tells how many lines the word puzzl
 | **Commits** | **Contributor** |  
 | --- | --- |  
 | 12 | [rogeriomattos](https://github.com/rogeriomattos) | 
-| 2 | [TigreDoMexico](https://github.com/TigreDoMexico)) | 
+| 2 | [TigreDoMexico](https://github.com/TigreDoMexico) | 
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
