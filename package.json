@@ -1,20 +1,31 @@
 {
   "name": "hunting-words",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Package of functions that help to create hunting word game.",
   "main": "index.js",
   "scripts": {
+    "docs": "node generate-docs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rogeriomattos/hunting-words.git"
   },
-  "keywords": ["word-hunting", "js", "game"],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "word-hunting",
+    "js",
+    "game",
+    "puzzle"
+  ],
+  "author": "Rogerio Almeida de Mattos <rogeriomattos38@outlook.com> (https://rogeriomattos.github.io/)",
+  "contributors": ["David Tigre (https://github.com/TigreDoMexico)"],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rogeriomattos/hunting-words/issues"
   },
-  "homepage": "https://github.com/rogeriomattos/hunting-words#readme"
+  "homepage": "https://github.com/rogeriomattos/hunting-words#readme",
+  "devDependencies": {
+    "markdown-magic": "^1.0.0",
+    "markdown-magic-github-contributors": "0.0.3"
+  }
 }
