@@ -2,21 +2,21 @@ const populateLetter = require('./populateLetter');
 const insert = require('./insert');
 
 /**
- * 
- * @param {Array<string>} words 
- * @param {number} row 
- * @param {number} column 
+ *
+ * @param {Array<string>} words
+ * @param {number} row
+ * @param {number} column
  * @returns Array<Array<string>>
  */
 function create(words, row, column){
-    
+
     let huntWordBoard = [];
-    
-    if(row&&column){ 
+
+    if(row && column){
         huntWordBoard = populateLetter(row,column)
     }
     else{
-        let longestLength  = words.reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
+        let longestLength = words.reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
         huntWordBoard = populateLetter(longestLength+10, longestLength+10);
     }
 
@@ -26,7 +26,7 @@ function create(words, row, column){
 }
 // create([
 //     "Rogerio",
-//     "Mattos", 
+//     "Mattos",
 //     "Almeida",
 //     "Eunice",
 //     "Merilyn",
@@ -35,7 +35,7 @@ function create(words, row, column){
 // ]);
 // console.log(create([
 //     "Rogerio",
-//     "Mattos", 
+//     "Mattos",
 //     "Almeida",
 //     "Eunice",
 //     "Merilyn",
