@@ -13,7 +13,7 @@ const direction = [
  */
 function wordsInBoard(words, board){
     for(let word of words){
-        addWord['addWordVertical'](word, board);
+        addWord[direction[randomInt(0,1)]](word, board);
     }
 
     return board;
@@ -37,7 +37,7 @@ const addWord = {
 
     addWordVertical : function (word, board){
         const {column, row} = getPositionVertical(board, word);
-        let reverseWord = 1;
+        let reverseWord = randomInt(0,1);
 
         let wordIndex = reverseWord ? word.length - 1 : 0;
 
