@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "node generate-docs.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon --exec jest"
   },
   "repository": {
     "type": "git",
@@ -18,14 +18,19 @@
     "puzzle"
   ],
   "author": "Rogerio Almeida de Mattos <rogeriomattos38@outlook.com> (https://rogeriomattos.github.io/)",
-  "contributors": ["David Tigre (https://github.com/TigreDoMexico)"],
+  "contributors": [
+    "David Tigre (https://github.com/TigreDoMexico)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rogeriomattos/hunting-words/issues"
   },
   "homepage": "https://github.com/rogeriomattos/hunting-words#readme",
   "devDependencies": {
+    "jest": "^25.2.7",
+    "nodemon": "^2.0.2",
     "markdown-magic": "^1.0.0",
     "markdown-magic-github-contributors": "0.0.3"
-  }
+  },
+  "dependencies": {}
 }
