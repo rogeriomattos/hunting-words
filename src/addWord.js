@@ -47,6 +47,22 @@ const addWord = {
         }
         
         return board;
+    },
+
+    diagonalLeft: function (word, board){
+        const {column, row} = position.getDiagonalLeft(board, word);
+
+        let reverseWord = randomInt(0,1);
+
+        let wordIndex = reverseWord ? word.length - 1 : 0;
+
+        for(let i = 0; i < word.length; i++){
+            board[row + i][column - i] = createLetter(word[wordIndex].toUpperCase(), word, row + i, column - i);
+            
+            wordIndex = reverseWord ? wordIndex - 1 : wordIndex + 1;
+        }
+        
+        return board;
     }
 
 }

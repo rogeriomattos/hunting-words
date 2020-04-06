@@ -37,14 +37,14 @@ function lengthOfLongestWord(words){
 //     "Silva",
 //     "Souza"
 // ]);
-// console.log(create([
-//     "Rogerio",
-//     "Mattos",
-//     "Almeida",
-//     "Eunice",
-//     "Merilyn",
-//     "Silva",
-//     "Souza"
-// ]));
+console.log(create([
+    "Rogerio",
+    "Mattos",
+    "Almeida",
+    "Eunice",
+    "Merilyn",
+    "Silva",
+    "Souza"
+]));
 
 module.exports = {create};
