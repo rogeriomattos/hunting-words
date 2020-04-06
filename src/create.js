@@ -16,13 +16,17 @@ function create(words, row, column){
         huntWordBoard = populateLetter(row,column)
     }
     else{
-        let longestLength = words.reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
-        huntWordBoard = populateLetter(longestLength+10, longestLength+10);
+        let longestLength = lengthOfLongestWord(words);
+        huntWordBoard = populateLetter(longestLength + 10, longestLength + 10);
     }
 
     huntWordBoard = insert.wordsInBoard(words, huntWordBoard);
 
     return huntWordBoard;
+}
+
+function lengthOfLongestWord(words){
+    return words.reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
 }
 // create([
 //     "Rogerio",
@@ -33,14 +37,14 @@ function create(words, row, column){
 //     "Silva",
 //     "Souza"
 // ]);
-// console.log(create([
-//     "Rogerio",
-//     "Mattos",
-//     "Almeida",
-//     "Eunice",
-//     "Merilyn",
-//     "Silva",
-//     "Souza"
-// ]));
+console.log(create([
+    "Rogerio",
+    "Mattos",
+    "Almeida",
+    "Eunice",
+    "Merilyn",
+    "Silva",
+    "Souza"
+]));
 
 module.exports = {create};
