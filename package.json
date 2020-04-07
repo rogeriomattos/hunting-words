@@ -1,6 +1,6 @@
 {
   "name": "hunting-words",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Package of functions that help to create hunting word game.",
   "main": "index.js",
   "scripts": {

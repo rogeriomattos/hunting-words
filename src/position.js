@@ -3,7 +3,9 @@ const randomInt = require('./randomInt');
 
 const position = {
     
-    getHorizontal : (board, word) =>{
+    getHorizontal : (board, word, wordIndex) =>{
+        let internalWordIndex = wordIndex;
+        let reverseWord = internalWordIndex == word.length - 1;
         let initialColumnLimit =  ((board[0].length - 1) - word.length)+1;
 
         let row = randomInt(0, board.length-1);
@@ -12,11 +14,12 @@ const position = {
         let rangePosition = [];
 
         for(let index = 0; index < word.length;index++){
-            rangePosition.push({"row": row, "column":column + index});
+            rangePosition.push({"letter":word[wordIndex],"row": row, "column":column + index});
+            internalWordIndex = reverseWord ? internalWordIndex - 1 : internalWordIndex + 1;
         }
 
         if(isPositionRepeated(rangePosition, board)){
-            const newPosition = position.getHorizontal(board, word);
+            const newPosition = position.getHorizontal(board, word, wordIndex);
             column = newPosition.column;
             row = newPosition.row;
         }
@@ -24,7 +27,9 @@ const position = {
         return {column, row};
     },
 
-    getVertical : (board, word) => {
+    getVertical : (board, word, wordIndex) => {
+        let internalWordIndex = wordIndex;
+        let reverseWord = internalWordIndex == word.length - 1;
         let initialRowLimit =  ((board.length - 1) - word.length)+1;
 
         let row = randomInt(0, initialRowLimit);
@@ -33,11 +38,12 @@ const position = {
         let rangePosition = [];
 
         for(let index = 0; index < word.length;index++){
-            rangePosition.push({"row": row + index, "column":column});
+            rangePosition.push({"letter":word[internalWordIndex],"row": row + index, "column":column});
+            internalWordIndex = reverseWord ? internalWordIndex - 1 : internalWordIndex + 1;
         }
 
         if(isPositionRepeated(rangePosition, board)){
-            const newPosition = position.getVertical(board, word);
+            const newPosition = position.getVertical(board, word, wordIndex);
             column = newPosition.column;
             row = newPosition.row;
         }
@@ -45,7 +51,9 @@ const position = {
         return {column, row};
     },
 
-    getDiagonalRight : (board, word) => {
+    getDiagonalRight : (board, word, wordIndex) => {
+        let internalWordIndex = wordIndex;
+        let reverseWord = internalWordIndex == word.length - 1;
         let initialRowLimit =  ((board.length - 1) - word.length)+1;
         let initialColumnLimit =  ((board[0].length - 1) - word.length)+1;
 
@@ -55,11 +63,12 @@ const position = {
         let rangePosition = [];
 
         for(let index = 0; index < word.length;index++){
-            rangePosition.push({"row": row + index, "column": column + index});
+            rangePosition.push({"letter":word[internalWordIndex],"row": row + index, "column": column + index});
+            internalWordIndex = reverseWord ? internalWordIndex - 1 : internalWordIndex + 1;
         }
 
         if(isPositionRepeated(rangePosition, board)){
-            const newPosition = position.getDiagonalRight(board, word);
+            const newPosition = position.getDiagonalRight(board, word, wordIndex);
             column = newPosition.column;
             row = newPosition.row;
         }
@@ -67,7 +76,9 @@ const position = {
         return {column, row};
     },
 
-    getDiagonalLeft : (board, word) => {
+    getDiagonalLeft : (board, word, wordIndex) => {
+        let internalWordIndex = wordIndex;
+        let reverseWord = internalWordIndex == word.length - 1;
         let initialRowLimit =  ((board.length - 1) - word.length)+1;
         let initialColumnLimit =  (word.length)+1;
         
@@ -77,11 +88,12 @@ const position = {
         let rangePosition = [];
 
         for(let index = 0; index < word.length;index++){
-            rangePosition.push({"row": row + index, "column": column - index});
+            rangePosition.push({"letter":word[wordIndex],"row": row + index, "column": column - index});
+            internalWordIndex = reverseWord ? internalWordIndex - 1 : internalWordIndex + 1;
         }
         
         if(isPositionRepeated(rangePosition, board)){
-            const newPosition = position.getDiagonalLeft(board, word);
+            const newPosition = position.getDiagonalLeft(board, word, wordIndex);
             column = newPosition.column;
             row = newPosition.row;
         }

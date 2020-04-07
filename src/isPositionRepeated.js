@@ -8,12 +8,16 @@ function isPositionRepeated(rangePosition, board){
             positionsWithWords = positionsWithWords.concat(wordsPositions);
         }
     });
-
+    
     for(let i = 0; i < positionsWithWords.length; i++){
-        for(let index = 0; index < rangePosition.length; index++)
+        for(let index = 0; index < rangePosition.length; index++){
+            
             if(positionsWithWords[i].row == rangePosition[index].row)
-                if(positionsWithWords[i].column == rangePosition[index].column)
-                    return true;
+                if(positionsWithWords[i].column == rangePosition[index].column){
+                    if(positionsWithWords[i].letter.toLocaleUpperCase() != rangePosition[index].letter.toLocaleUpperCase())
+                        return true;
+                }
+        }
     }
 
     return false;
