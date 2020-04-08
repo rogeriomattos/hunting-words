@@ -44,6 +44,6 @@ console.log(create([
     "RRRRRRR",
     "RRRRRRR",
     "rrrrrr",
-]).map((el)=>{return el.filter((r)=>{return r.word != null})}));
+]));
 
 module.exports = {create};
