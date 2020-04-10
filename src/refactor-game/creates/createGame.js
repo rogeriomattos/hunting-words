@@ -7,9 +7,11 @@ function createGame(rows, columns, words){
     this.columns = columns;
 }
 
-let game = new createGame(30, 40, ["teste", "teste"]);
+let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"]);
 
 console.log(game);
+
+console.log(game.board[0][0]);
 
 
 

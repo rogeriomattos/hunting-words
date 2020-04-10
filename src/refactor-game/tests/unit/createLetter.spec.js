@@ -1,4 +1,4 @@
-const createLetter = require('../../src/createLetter')
+/*const createLetter = require('../../src/createLetter')
 describe('Create Letter', () => {
     it('should be onbject', () => {
         const letter = createLetter('m', null, 0, 0); 
@@ -29,4 +29,4 @@ describe('Create Letter', () => {
         const letter = createLetter('A', 'Afonso', 0, 4); 
         expect(letter).toHaveProperty('column', 4);
     });
-});
+});*/

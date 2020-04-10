@@ -1,17 +1,18 @@
 const alphabet = require("../utils/alphabet");
-const getRandomInt = require("../utils/randomInt");
+const random = require("../utils/random");
 const createLetter = require('./createLetter');
 
 function createBoard(rows, columns, words){
 
-    initBoardWithRandomLetters = function(row, column){
+    initBoardWithRandomLetters = function(){
         let board = [];
     
-        for(let i = 0; i < row; i++){
+        for(let i = 0; i < rows; i++){
             board.push([]);
     
-            for(let j = 0; j < column; j++){
-                let letter = alphabet[getRandomInt(0, alphabet.length-1)];
+            for(let j = 0; j < columns; j++){
+                let letter = random.getString(alphabet);
+
                 board[i].push(new createLetter(letter, null, i, j));
             }
         }
@@ -19,7 +20,7 @@ function createBoard(rows, columns, words){
         return board;
     }
 
-    const board = initBoardWithRandomLetters(rows, columns);
+    const board = initBoardWithRandomLetters();
 
     Array.prototype.push.apply(this, board);
 }
