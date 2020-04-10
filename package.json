@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "node generate-docs.js",
-    "test": "nodemon --exec jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
