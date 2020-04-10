@@ -9,9 +9,11 @@ function createGame(rows, columns, words){
 
 let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"]);
 
-console.log(game);
+// console.log(game);
 
-console.log(game.board[0][0]);
+// console.log(game.board[0][0]);
+
+module.exports = createGame;
 
 
 

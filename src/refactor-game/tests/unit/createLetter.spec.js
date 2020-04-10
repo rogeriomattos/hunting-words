@@ -1,7 +1,7 @@
 const createLetter = require('../../creates/createLetter')
 
 describe('Create Letter', () => {
-    it('should be onbject', () => {
+    it('should be object', () => {
         const letter = new createLetter('m', null, 0, 0); 
         expect(typeof letter).toBe('object');
     });
@@ -70,7 +70,7 @@ describe('Test letter sets', () => {
     
         expect(letter.letter).toBe('X');
     });
-    
+
 });
 
 describe('CreateLetter test function addNewWord', () => {
