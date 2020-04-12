@@ -7,6 +7,7 @@ const createBoard = require('./createBoard');
  * @param {number} columns 
  * @param {Array<string>} words 
  * @param {object{wordsCross:boolen, inverseWord:boolean, wordInVertical:boolean, wordInHorizontal:boolean, wordDiagonalLeft: boolen, wordDiagonalRight: boolen}} options 
+ * @returns object
  */
 function createGame(rows, columns, words, options){
     options = {
@@ -18,7 +19,7 @@ function createGame(rows, columns, words, options){
         wordDiagonalRight: (!options || options.wordDiagonalRight != false) 
     };
 
-    this.board = new createBoard(rows, columns, words);
+    this.board = new createBoard(rows, columns, words, options);
     this.words = words;
     this.rows = rows;
     this.columns = columns;
@@ -26,7 +27,7 @@ function createGame(rows, columns, words, options){
 
 let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"], {});
 
-//console.log(game);
+console.log(game);
 
 //console.log(game.board[0][8]);
 
