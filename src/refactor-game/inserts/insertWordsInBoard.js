@@ -7,11 +7,10 @@ function insertWordsInBoard(board, words, options){
         
         let wordIndex = 0;
         
-        for(const {row, column} of positions){
-            console.log("row: " + row);
-            console.log("column: " + column);
+        for(const {row, column, letter} of positions){
+            
             board[row][column].addNewWord(word);
-            board[row][column].setLetter(word[wordIndex]);
+            board[row][column].setLetter(letter);
             
             wordIndex++;
         }

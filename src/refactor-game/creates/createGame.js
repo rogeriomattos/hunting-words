@@ -27,9 +27,15 @@ function createGame(rows, columns, words, options){
 
 let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"], {wordInHorizontal:false});
 
-// console.log(game);
+ console.log(game);
 
-// console.log(game.board[0][8]);
+ console.log(game.board.forEach((item)=>{
+     item.forEach((col)=>{
+         if(col.word.length > 0){
+             console.log(col);
+         }
+     });
+    }));
 
 module.exports = createGame;
 

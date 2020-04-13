@@ -12,10 +12,11 @@ function createPositionsToWordInBoard(word, board, options){
     
     const directions = directionsPositions(options);
     
-    console.log(directions);
-
-    positions = random.getFunctions(directions)(word, rowMax, columnMax);
+    positions = random.getFunctions(directions)(word, rowMax, columnMax, options.inverseWord);
     
+    if(isPositionRepeated(positions, board, options.wordsCross))
+        positions = createPositionsToWordInBoard(word, board, options);
+
     return positions;
 }
 
@@ -35,6 +36,20 @@ function directionsPositions({wordInVertical, wordInHorizontal, wordDiagonalLeft
         directions.push(createDiagonalRightPositions);
     
     return directions;
+}
+
+function isPositionRepeated(positions, board, wordsCross){
+    
+    for({row, column, letter} of positions){
+        if(wordsCross)
+            if(board[row][column].word.length > 0 && board[row][column].letter != letter)
+                return true;
+        else
+            if(board[row][column].word.length > 0)
+                return true;
+    }
+    
+    return false;
 }
 
 module.exports = createPositionsToWordInBoard;

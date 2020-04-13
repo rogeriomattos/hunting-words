@@ -1,6 +1,6 @@
 function createLetter(letter, word, row, column){
     
-    this.letter = letter;
+    this.letter = letter.toUpperCase();
     this.word = (word)? [word] : [];
     this.row = row;
     this.column = column;
@@ -11,7 +11,7 @@ function createLetter(letter, word, row, column){
     }
 
     this.setLetter = function(letter){
-        this.letter = letter;
+        this.letter = letter.toUpperCase();
     }
 
     this.setRow = function(row){
