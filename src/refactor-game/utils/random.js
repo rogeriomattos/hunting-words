@@ -22,5 +22,15 @@ function getString(arrayString) {
     
     return;
 }
+
+function getFunctions(arrayFunctions) {
+    if(arrayFunctions){
+        let indexRandom = getInt(0, arrayFunctions.length -1);
+
+        return arrayFunctions[indexRandom];
+    }
+
+    return;
+}
  
-module.exports = { getInt, getString };
+module.exports = { getInt, getString, getFunctions };

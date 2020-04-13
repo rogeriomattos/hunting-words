@@ -1,8 +1,20 @@
+const createPositionsToWordInBoard = require('../creates/createPositionsToWordInBoard');
+
 function insertWordsInBoard(board, words, options){
 
     for(let word of words){
-        //type code that create the positions in board
-        //make a for that to keep each letter in board
+        let positions = createPositionsToWordInBoard(word, board, options);
+        
+        let wordIndex = 0;
+        
+        for(const {row, column} of positions){
+            console.log("row: " + row);
+            console.log("column: " + column);
+            board[row][column].addNewWord(word);
+            board[row][column].setLetter(word[wordIndex]);
+            
+            wordIndex++;
+        }
     }
 
     return board;

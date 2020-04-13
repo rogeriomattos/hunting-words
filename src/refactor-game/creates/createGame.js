@@ -25,11 +25,11 @@ function createGame(rows, columns, words, options){
     this.columns = columns;
 }
 
-let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"], {});
+let game = new createGame(30, 40, ["teste", "Rogerio", "Palavra"], {wordInHorizontal:false});
 
-console.log(game);
+// console.log(game);
 
-//console.log(game.board[0][8]);
+// console.log(game.board[0][8]);
 
 module.exports = createGame;
 

@@ -5,7 +5,6 @@ function createBoard(rows, columns, words, options){
 
     let board = insertRandomLettersInBoard(rows, columns);
 
-
     board = insertWordsInBoard(board, words, options);
 
     return board;
