@@ -1,5 +1,5 @@
-const {create} = require("./src/create");
+const createGame = require("./src/creates/createGame");
 
 module.exports = {
-    create
+    createGame
 };
