@@ -12,7 +12,9 @@ function createPositionsToWordInBoard(word, board, options){
     
     const directions = directionsPositions(options);
     
-    positions = random.getFunctions(directions)(word, rowMax, columnMax, options.inverseWord);
+    const inverseWord = options.inverseWord && random.getBoolean();
+
+    positions = random.getFunctions(directions)(word, rowMax, columnMax, inverseWord);
     
     if(isPositionRepeated(positions, board, options.wordsCross))
         positions = createPositionsToWordInBoard(word, board, options);

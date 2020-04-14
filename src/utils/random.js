@@ -32,5 +32,11 @@ function getFunctions(arrayFunctions) {
 
     return;
 }
+
+function getBoolean(){
+    let arraryBoolean = [false, true];
+
+    return arraryBoolean[getInt(0, 1)];
+}
  
-module.exports = { getInt, getString, getFunctions };
+module.exports = { getInt, getString, getFunctions, getBoolean };
