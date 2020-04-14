@@ -8,15 +8,27 @@ npm i hunting-words
 ```
 
 ```js
-const { create } = require('hunting-words');
+const { createGame } = require('hunting-words');
 
-let huntingWords = create(["word 1","word 2","word 3"]);
+const options = {
+    wordsCross:false, 
+    inverseWord:true, 
+    wordInVertical:true,
+    wordInHorizontal:true, 
+    wordDiagonalLeft: false, 
+    wordDiagonalRight: false
+};
+
+let game = createGame(30, 40, ["word 1","word 2","word 3"], options);
 ```
 
-- create(words, row, column): 
+- createGame(rows, columns, words, options):
 
-This function receives a vector of words and returns a matrix of letters with the scrambled words, this matrix is the word search.
-It also receives a parameter called row that tells how many lines the word puzzle will have and another parameter called column that tells how many columns the word puzzle will have. If these 2 properties are not informed, the function takes the longest word and creates a matrix based on its size plus 10. 
+  - rows -> number of word search lines
+  - columns -> columns of word search lines
+  - words -> array of words that will be in the word search
+  - options -> json object that contains the game preferences 
+
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (CONTRIBUTORS) -->
 | **Commits** | **Contributor** |  
