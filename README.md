@@ -31,9 +31,9 @@ let game = createGame(30, 40, ["word 1","word 2","word 3"], options);
 
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (CONTRIBUTORS) -->
-| **Commits** | **Contributor** |  
-| --- | --- |  
-| 12 | [rogeriomattos](https://github.com/rogeriomattos) | 
-| 2 | [TigreDoMexico](https://github.com/TigreDoMexico) | 
+| **Contributor** |  
+| --- |  
+| [rogeriomattos](https://github.com/rogeriomattos) | 
+| [TigreDoMexico](https://github.com/TigreDoMexico) | 
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
