@@ -19,15 +19,42 @@ const options = {
     wordDiagonalRight: false
 };
 
-let game = createGame(30, 40, ["word 1","word 2","word 3"], options);
+let game = createGame(10, 10, ["word1","word2","word3"], options);
 ```
 
-- createGame(rows, columns, words, options):
 
+- createGame(rows, columns, words, options):
+  Return   
   - rows -> number of word search lines
   - columns -> columns of word search lines
   - words -> array of words that will be in the word search
   - options -> json object that contains the game preferences 
+
+
+Return 
+```json
+{
+  board: array<array<createLetter>> 
+  words: array<string> ["word1", "word2", "word3"],
+  rows: 10,
+  columns: 10,
+}
+```
+createLetter
+```json
+{
+  letter: "C"
+  word: []
+  row: 0
+  column: 0
+  isSelected: false
+  addNewWord: ƒ (word)
+  setLetter: ƒ (letter)
+  setRow: ƒ (row)
+  setColumn: ƒ (column)
+  setIsSelected: ƒ (isSelected)
+}
+```
 
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (CONTRIBUTORS) -->

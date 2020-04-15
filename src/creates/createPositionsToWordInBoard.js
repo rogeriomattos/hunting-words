@@ -43,11 +43,12 @@ function directionsPositions({wordInVertical, wordInHorizontal, wordDiagonalLeft
 function isPositionRepeated(positions, board, wordsCross){
     
     for({row, column, letter} of positions){
-        if(wordsCross)
-            if(board[row][column].word.length > 0 && board[row][column].letter != letter)
-                return true;
-        else
-            if(board[row][column].word.length > 0)
+
+        if(board[row][column].word.length > 0)
+            if(wordsCross)
+                if(board[row][column].letter != letter)
+                    return true;
+            else
                 return true;
     }
     
